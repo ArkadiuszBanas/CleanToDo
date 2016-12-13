@@ -10,7 +10,7 @@ protocol ListInteractorInput {
 }
 
 protocol ListInteractorOutput {
-    func presentList(response: List.Tasks.Response)
+    func presentList(tasks: [Task])
 }
 
 class ListInteractor: ListInteractorInput
@@ -19,7 +19,6 @@ class ListInteractor: ListInteractorInput
 
     func loadTasks() {
 
-        let response = List.Tasks.Response(tasks: DataManager.shared.tasks)
-        output.presentList(response: response)
+        output.presentList(tasks: DataManager.shared.tasks)
     }
 }

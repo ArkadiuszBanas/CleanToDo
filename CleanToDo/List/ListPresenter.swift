@@ -6,7 +6,7 @@
 import UIKit
 
 protocol ListPresenterInput {
-    func presentList(response: List.Tasks.Response)
+    func presentList(tasks: [Task])
 }
 
 protocol ListPresenterOutput: class {
@@ -23,9 +23,9 @@ class ListPresenter: ListPresenterInput {
         return dateFormatter
     }()
 
-    func presentList(response: List.Tasks.Response) {
+    func presentList(tasks: [Task]) {
 
-        let cellTasks = response.tasks.flatMap { model -> List.Tasks.ViewModel.CellTask in
+        let cellTasks = tasks.flatMap { model -> List.Tasks.ViewModel.CellTask in
 
             var dueDate: String?
             if let date = model.date {

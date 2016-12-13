@@ -6,7 +6,7 @@
 import UIKit
 
 protocol CreateTaskInteractorInput {
-    func createTask(withRequest request: CreateTask.Request)
+    func createTask(withTitle title: String?)
     func pick(dueDate: Date)
 }
 
@@ -22,10 +22,10 @@ class CreateTaskInteractor: CreateTaskInteractorInput
     var worker = CreateTaskWorker()
     var dueDate: Date?
 
-    func createTask(withRequest request: CreateTask.Request) {
+    func createTask(withTitle title: String?) {
 
-        if worker.validateTask(withRequest: request) {
-            worker.saveTask(withTitle: request.title, dueDate: dueDate)
+        if worker.validateTask(withTitle: title) {
+            worker.saveTask(withTitle: title, dueDate: dueDate)
             output.taskSaved()
         } else {
             output.invalidTask()

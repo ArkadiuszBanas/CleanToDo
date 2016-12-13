@@ -7,8 +7,8 @@ import UIKit
 
 class CreateTaskWorker {
 
-    func validateTask(withRequest request: CreateTask.Request) -> Bool {
-        guard let title = request.title else {
+    func validateTask(withTitle title: String?) -> Bool {
+        guard let title = title else {
             return false
         }
 

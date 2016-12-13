@@ -16,7 +16,7 @@ protocol CreateTaskViewControllerInput {
 }
 
 protocol CreateTaskViewControllerOutput {
-    func createTask(withRequest request: CreateTask.Request)
+    func createTask(withTitle title: String?)
     func pick(dueDate: Date)
 }
 
@@ -36,8 +36,7 @@ class CreateTaskViewController: UIViewController
     }
 
     @IBAction func doneButttonTapped(_ sender: AnyObject) {
-        let request = CreateTask.Request(title: textField.text)
-        output.createTask(withRequest: request)
+        output.createTask(withTitle: textField.text)
     }
 
     @IBAction func cancelButtonTapped(_ sender: AnyObject) {

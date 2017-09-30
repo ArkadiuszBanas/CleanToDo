@@ -20,7 +20,6 @@
 		37F6DE751DD5FC5E00177A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F6DE731DD5FC5E00177A3F /* Main.storyboard */; };
 		37F6DE771DD5FC5E00177A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F6DE761DD5FC5E00177A3F /* Assets.xcassets */; };
 		37F6DE7A1DD5FC5E00177A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F6DE781DD5FC5E00177A3F /* LaunchScreen.storyboard */; };
-		37F6DE851DD5FC5E00177A3F /* CleanToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6DE841DD5FC5E00177A3F /* CleanToDoTests.swift */; };
 		37F6DE981DD5FC8900177A3F /* CreateTaskConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6DE911DD5FC8900177A3F /* CreateTaskConfigurator.swift */; };
 		37F6DE991DD5FC8900177A3F /* CreateTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6DE921DD5FC8900177A3F /* CreateTaskInteractor.swift */; };
 		37F6DE9A1DD5FC8900177A3F /* CreateTaskModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F6DE931DD5FC8900177A3F /* CreateTaskModels.swift */; };
@@ -57,7 +56,6 @@
 		37F6DE791DD5FC5E00177A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37F6DE7B1DD5FC5E00177A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37F6DE801DD5FC5E00177A3F /* CleanToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		37F6DE841DD5FC5E00177A3F /* CleanToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanToDoTests.swift; sourceTree = "<group>"; };
 		37F6DE861DD5FC5E00177A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37F6DE911DD5FC8900177A3F /* CreateTaskConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateTaskConfigurator.swift; path = CreateTask/CreateTaskConfigurator.swift; sourceTree = "<group>"; };
 		37F6DE921DD5FC8900177A3F /* CreateTaskInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateTaskInteractor.swift; path = CreateTask/CreateTaskInteractor.swift; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 		37F6DE831DD5FC5E00177A3F /* CleanToDoTests */ = {
 			isa = PBXGroup;
 			children = (
-				37F6DE841DD5FC5E00177A3F /* CleanToDoTests.swift */,
 				37F6DE861DD5FC5E00177A3F /* Info.plist */,
 			);
 			path = CleanToDoTests;
@@ -316,7 +313,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37F6DE851DD5FC5E00177A3F /* CleanToDoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
